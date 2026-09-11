@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años - Luz Nerea Reinoso</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- FONDO DE ESTRELLAS DE 5 PUNTAS -->
+    <div class="fondo-estrellas">
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+        <span>★</span><span>☆</span><span>★</span><span>★</span><span>☆</span>
+    </div>
+
+    <!-- PORTADA -->
+    <div class="portada" onclick="abrirInvitacion()">
+        <div class="contenido-portada">
+            ★
+            <h1>Luz Reinoso</h1>
+            <h2>Mis XV Años</h2>
+            <p>Toca para abrir</p>
+            ★
+        </div>
+    </div>
+
+    <!-- INVITACIÓN PRINCIPAL -->
+    <div class="invitacion">
+
+        <span class="estrella e1">★</span>
+        <span class="estrella e2">☆</span>
+        <span class="estrella e3">★</span>
+        <span class="estrella e4">☆</span>
+        <span class="estrella e5">★</span>
+        <span class="estrella e6">☆</span>
+
+        <div class="estrella-principal">★</div>
+
+        <h1>LUZ <br> REINOSO</h1>
+        <h2>Mis XV Años</h2>
+
+        <p>
+            ★ Tengo el honor de invitarte<br>
+            a compartir conmigo una noche muy especial ★
+        </p>
+
+        <div class="datos">
+            <span>Sábado 7 de noviembre de 2026</span>
+            <span>21:00 hs</span>
+        </div>
+
+        <div class="ubicacion">
+            <a href="https://maps.app.goo.gl/8xKAperYKwFBSQxz5" target="_blank" rel="noopener noreferrer" class="boton-mapa">Ver ubicación</a>
+        </div>
+
+        <div class="vestimenta">
+            Código de vestimenta:<br>
+            <b>Elegante Sport</b>
+        </div>
+
+        <div class="contador">
+            <h3>Faltan... ★</h3>
+            <div class="tiempo">
+                <div>
+                    <span id="dias">0</span>
+                    <small>Días</small>
+                </div>
+                <div>
+                    <span id="horas">0</span>
+                    <small>Horas</small>
+                </div>
+                <div>
+                    <span id="minutos">0</span>
+                    <small>Min</small>
+                </div>
+                <div>
+                    <span id="segundos">0</span>
+                    <small>Seg</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÓN ÁLBUM MÁGICO -->
+        <div class="boton-album">
+            <h3 class="titulo-album"></h3>
+            <button onclick="abrirAlbum()">Ver recuerdos</button>
+        </div>
+
+        <!-- ÁLBUM DESPLEGABLE EN LIBRO MÁGICO 3D -->
+        <div class="album" id="album">
+
+            <div class="libro-wrapper">
+                <div class="libro" id="libro">
+
+                    <!-- PORTADA DEL LIBRO -->
+                    <div class="pagina" onclick="paginaSiguiente()">
+                        <div class="cara frente portada-frente">
+                            <h4>mis recuerdos</h4>
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto1.jpeg" alt="Foto 1" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- HOJA 1 -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto2.jpeg" alt="Foto 2" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto3.jpeg" alt="Foto 3" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- HOJA 2 -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto4.jpeg" alt="Foto 4" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto5.jpeg" alt="Foto 5" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- HOJA 3 -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto6.jpeg" alt="Foto 6" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto7.jpeg" alt="Foto 7" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- HOJA 4 -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto8.jpeg" alt="Foto 8" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto9.jpeg" alt="Foto 9" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- HOJA 5 -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto10.jpeg" alt="Foto 10" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso">
+                            <img src="fotos/foto11.jpeg" alt="Foto 11" onclick="verFoto(this)">
+                        </div>
+                    </div>
+
+                    <!-- CONTRAPORTADA FINAL VACÍA -->
+                    <div class="pagina">
+                        <div class="cara frente">
+                            <img src="fotos/foto12.jpeg" alt="Foto 12" onclick="verFoto(this)">
+                        </div>
+                        <div class="cara dorso contraportada-dorso">
+                            <!-- PARTE DE ATRÁS COMPLETAMENTE VACÍA -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTROLES PARA HOJEAR -->
+            <div class="controles-libro">
+                <button onclick="paginaAnterior()">◄ Anterior</button>
+                <span id="numPagina">Portada</span>
+                <button onclick="paginaSiguiente()">Siguiente ►</button>
+            </div>
+
+        </div>
+
+        <div class="alias">
+            <p class="mensaje-regalo">
+                Tu presencia sería el mejor regalo,<br>
+                pero si deseas obsequiarme algo mi alias es...
+            </p>
+            <p id="aliasTexto">luz.nerea.reinoso</p>
+            <button onclick="copiarAlias()">Copiar</button>
+        </div>
+
+        <div class="particulas">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <!-- VISOR DE FOTOS -->
+    <div class="visor" id="visor" onclick="cerrarFoto()">
+        <img id="fotoGrande" alt="Foto ampliada">
+    </div>
+
+    <!-- MÚSICA DE FONDO -->
+    <audio id="musica" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function abrirInvitacion() {
+            document.querySelector(".portada").classList.add("oculta");
+            document.getElementById("musica").play();
+        }
+
+        function abrirAlbum() {
+            let album = document.getElementById("album");
+            album.style.display = (album.style.display === "block") ? "none" : "block";
+            actualizarPaginas();
+        }
+
+        // LÓGICA DEL LIBRO MÁGICO 3D CON CENTRADO DINÁMICO
+        let paginaActual = 0;
+        const paginas = document.querySelectorAll('.libro .pagina');
+        const totalPaginas = paginas.length;
+
+        function actualizarPaginas() {
+            paginas.forEach((pag, i) => {
+                if (i < paginaActual) {
+                    pag.classList.add('flipped');
+                    pag.style.zIndex = i + 1;
+                } else {
+                    pag.classList.remove('flipped');
+                    pag.style.zIndex = totalPaginas - i;
+                }
+            });
+
+            // Centrado dinámico del libro según su estado
+            const libro = document.getElementById('libro');
+            if (paginaActual === 0) {
+                // Portada cerrada centrada
+                libro.style.transform = 'translateX(-75px)';
+            } else if (paginaActual === totalPaginas) {
+                // Contraportada cerrada centrada
+                libro.style.transform = 'translateX(75px)';
+            } else {
+                // Libro abierto centrado
+                libro.style.transform = 'translateX(0px)';
+            }
+
+            let indicador = document.getElementById('numPagina');
+            if (paginaActual === 0) {
+                indicador.innerText = "Portada";
+            } else if (paginaActual === totalPaginas) {
+                indicador.innerText = "Final";
+            } else {
+                indicador.innerText = `Página ${paginaActual} de ${totalPaginas}`;
+            }
+        }
+
+        function paginaSiguiente() {
+            if (paginaActual < totalPaginas) {
+                paginaActual++;
+                actualizarPaginas();
+            }
+        }
+
+        function paginaAnterior() {
+            if (paginaActual > 0) {
+                paginaActual--;
+                actualizarPaginas();
+            }
+        }
+
+        // Permitir hojear haciendo clic en la página derecha o izquierda
+        paginas.forEach((pag, index) => {
+            pag.addEventListener('click', function(e) {
+                if (e.target.tagName === 'IMG') return;
+                
+                if (index === paginaActual) {
+                    paginaSiguiente();
+                } else if (index === paginaActual - 1) {
+                    paginaAnterior();
+                }
+            });
+        });
+
+        // FUNCIONES DE VISOR DE FOTOS
+        function verFoto(imagen) {
+            let visor = document.getElementById("visor");
+            let fotoGrande = document.getElementById("fotoGrande");
+            fotoGrande.src = imagen.src;
+            visor.style.display = "flex";
+        }
+
+        function cerrarFoto() {
+            document.getElementById("visor").style.display = "none";
+        }
+
+        function copiarAlias() {
+            let alias = document.getElementById("aliasTexto").innerText;
+            navigator.clipboard.writeText(alias);
+            alert("Alias copiado al portapapeles ★");
+        }
+
+        // CUENTA REGRESIVA
+        const fechaEvento = new Date("November 7, 2026 21:00:00").getTime();
+
+        setInterval(() => {
+            let ahora = new Date().getTime();
+            let distancia = fechaEvento - ahora;
+
+            if (distancia > 0) {
+                document.getElementById("dias").innerText = Math.floor(distancia / (1000 * 60 * 60 * 24));
+                document.getElementById("horas").innerText = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById("minutos").innerText = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("segundos").innerText = Math.floor((distancia % (1000 * 60)) / 1000);
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
